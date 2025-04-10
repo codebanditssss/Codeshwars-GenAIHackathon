@@ -1,0 +1,24 @@
+# Root ignores
+.DS_Store
+.env
+node_modules/
+dist/
+.vscode/
+*.log
+__pycache__/
+
+# Python venv
+venv/
+
+# React / React Native
+frontend/node_modules/
+mobile/MyApp/node_modules/
+frontend/dist/
+mobile/MyApp/android/
+mobile/MyApp/ios/
+
+# Tailwind cache
+frontend/.tailwindcache
+
+# VS Code settings
+*.code-workspace
