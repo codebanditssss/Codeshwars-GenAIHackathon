@@ -1,0 +1,73 @@
+import { Order } from '@/types';
+
+export const mockOrders: Order[] = [
+  {
+    id: '1',
+    businessId: 'business1',
+    businessName: 'Business 1',
+    businessLocation: {
+      latitude: 12.9716,
+      longitude: 77.5946,
+    },
+    customerName: 'John Doe',
+    customerPhone: '+91 98765 43210',
+    customerAddress: '456 Oak Ave',
+    customerLocation: {
+      latitude: 12.9716,
+      longitude: 77.5946,
+    },
+    items: '2x Item 1',
+    status: 'pending',
+    riderId: 'rider1',
+    riderName: 'Rider 1',
+    createdAt: new Date().toISOString(),
+    price: 21.98,
+    distance: 2.5,
+  },
+  {
+    id: '2',
+    businessId: 'business1',
+    businessName: 'Business 1',
+    businessLocation: {
+      latitude: 12.9716,
+      longitude: 77.5946,
+    },
+    customerName: 'Jane Smith',
+    customerPhone: '+91 98765 43211',
+    customerAddress: '321 Elm St',
+    customerLocation: {
+      latitude: 12.9716,
+      longitude: 77.5946,
+    },
+    items: '1x Item 2',
+    status: 'assigned',
+    riderId: 'rider1',
+    riderName: 'Rider 1',
+    createdAt: new Date().toISOString(),
+    price: 15.99,
+    distance: 1.8,
+  },
+  {
+    id: '3',
+    businessId: 'business2',
+    businessName: 'Business 2',
+    businessLocation: {
+      latitude: 12.9716,
+      longitude: 77.5946,
+    },
+    customerName: 'Bob Wilson',
+    customerPhone: '+91 98765 43212',
+    customerAddress: '987 Cedar St',
+    customerLocation: {
+      latitude: 12.9716,
+      longitude: 77.5946,
+    },
+    items: '3x Item 3',
+    status: 'delivered',
+    riderId: 'rider2',
+    riderName: 'Rider 2',
+    createdAt: new Date().toISOString(),
+    price: 17.97,
+    distance: 3.2,
+  },
+];
